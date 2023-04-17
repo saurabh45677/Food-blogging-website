@@ -1,38 +1,361 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-size: 1.6rem !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-part {
+  height: 100vh;
+  flex-direction: column;
+}
+
+.left-part img {
+  position: relative;
+  right: 60px;
+  padding: 50px;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.header-content {
+  height: 45rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: 4rem;
+}
+
+.header-content h1 {
+  color: #0e2368;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 6.9rem;
+}
+.header-content p {
+  width: 34.5rem;
+  height: 10rem;
+  line-height: 2.7rem;
+  font-size: 1.64rem;
+  font-weight: 400;
+  padding-top: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.explore-now {
+  border: none;
+  width: 19rem;
+  height: 6.3rem;
+  border-radius: 3.4rem;
+  background: #e23744;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+}
+
+.best {
+  color: #e23744;
+}
+
+.right-part {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.pizzaimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0px 0px 0px 198.902px;
+}
+
+.vector {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 85rem;
+  width: 85rem;
+  transform: translate(3rem, -0.5rem);
+}
+
+/************************************************* About Us CSS *************************************************************/
+
+.about-section {
+  background: linear-gradient(
+    90.07deg,
+    rgba(30, 42, 93, 0.04) 30.91%,
+    rgba(48, 62, 130, 0.04) 64.79%,
+    rgba(60, 80, 157, 0.04) 91.94%
+  );
+}
+.about-us {
+  margin-top: 18.5rem;
+}
+
+.about-us img {
+  width: 38.4rem;
+  height: 46.8rem;
+}
+
+.image-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about-right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-right-content h1 {
+  color: #0e2368;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 4.5rem;
+  line-height: 2.7rem;
+  padding-bottom: 4rem;
+  font-family: "Poppins";
+  width: 42.2rem;
+  height: 2.6rem;
+}
+.about-right-content p {
+  position: relative;
+  width: 44.7rem;
+  padding-top: 2.741rem;
+  bottom: 2rem;
+}
+
+.about-right-content button {
+  position: relative;
+  background: #e23744;
+  border: none;
+  width: 13.2rem;
+  height: 4.2rem;
+  border-radius: 3.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  top: 0.5rem;
+}
+
+/*********************************************  Articles CSS ****************************************************/
+
+.articles {
+  border: 1px solid rgba(147, 162, 211, 0.38);
+  border-radius: 2.09rem;
+  padding: 2.7rem;
+  margin-top: 3rem;
+  width: 38.1rem;
+  height: 55.4rem;
+}
+
+.articles img {
+  border-radius: 2.1rem;
+}
+
+.articles h2 {
+  margin-top: 3.551rem;
+  width: 28.5rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 2.7rem;
+}
+
+.articles p {
+  width: 29.5rem;
+  color: #444957;
+  margin-top: 1.4rem;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+}
+
+.read-more {
+  background-color: white;
+  color: #424961;
+  position: relative;
+  width: 13.2rem;
+  height: 4.2rem;
+  border: 1.37039px solid #424961;
+  border-radius: 3.4rem;
+  font-size: 1.64rem;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+  top: 2rem;
+}
+
+.articles-heading {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 5.6rem;
+  color: #0e2368;
+  position: relative;
+  left: 10.5rem;
+  margin-top: 15.8rem;
+}
+
+.carousel-section {
+  padding-bottom: 7rem;
+}
+
+.slick-prev {
+  top: 115% !important;
+  border: 1px solid #000 !important;
+  left: 48% !important;
+  border-radius: 3px;
+  height: 35px !important;
+  width: 35px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-next {
+  top: 115% !important;
+  border: 1px solid #000 !important;
+  left: 52% !important;
+  border-radius: 3px;
+  height: 35px !important;
+  width: 35px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #424961 !important;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 1 !important;
+}
+
+/********************************************************  FooterCSS **********************************************************/
+
+.footer-content {
+  margin-top: 6.5rem;
+  height: 36.2rem;
+  position: relative;
+}
+
+.footer-image img {
+  position: absolute;
+  top: 12.3rem;
+  left: 3rem;
+  width: 16.1rem;
+  height: 12.5rem;
+}
+
+.details-conatiner {
+  position: relative;
+  padding: 0 60px;
+  width: 90%;
+  height: 70%;
+  left: 1rem;
+  top: 7rem;
+}
+
+.details-conatiner h4 {
+  padding-top: 4px;
+  width: 9.4rem;
+  height: 2.7rem;
+  color: #0e2368;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.88rem;
+}
+
+.details-conatiner p {
+  width: 21.7rem;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.46rem;
+  line-height: 23px;
+  color: #646874;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 2rem 9.2rem 12rem;
+}
+
+.footer-menu h3 {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.88rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.03em;
+  color: #0e2368;
+}
+
+.footer-menu a {
+  width: 7.5rem;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.465rem;
+  line-height: 2.7rem;
+  color: #646874;
+  padding-top: 0.8rem;
+  text-decoration: none;
+}
+
+.social-media-links {
+  padding: 7rem 2rem 9.2rem 12rem;
+}
+.social-media-links h2 {
+  width: 12.9rem;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.03em;
+  color: #0e2368;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding-top: 0.8rem;
+}
+
+.social-media-icons > svg {
+  color: #0e2368;
+  font-size: 2rem;
+}
+
+.copyright-para {
+  position: relative;
+  top: 8.2rem;
+  right: 5.5rem;
+  width: 21rem;
 }

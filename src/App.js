@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import About from "./components/About";
+import Articles from "./components/Articles";
+import Header from "./components/Header";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
+  const [sliderRef, setSliderRef] = useState(null);
+
+  const sliderSettings = {
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    infinite: true,
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <Header />
+        <About />
+        <h1 className="articles-heading">Latest Articles</h1>
+        <section className="carousel-section content">
+          <div ref={setSliderRef} className="container">
+            <Slider {...sliderSettings}>
+              <Articles />
+              <Articles />
+              <Articles />
+              <Articles />
+              <Articles />
+              <Articles />
+            </Slider>
+
+            {/*  <div className="controls">
+              <button onClick={sliderRef?.slickPrev}>
+                <FaChevronLeft />
+              </button>
+              <button onClick={sliderRef?.slickNext}>
+                <FaChevronRight />
+              </button>
+            </div>*/}
+          </div>
+        </section>
+        <Footer />
+      </>
     </div>
   );
 }
