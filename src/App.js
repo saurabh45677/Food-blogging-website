@@ -9,8 +9,6 @@ import { useState } from "react";
 import Footer from "./components/Footer";
 
 function App() {
-  const [sliderRef, setSliderRef] = useState(null);
-
   const sliderSettings = {
     slidesToShow: 3,
     slidesToScroll: 2,
@@ -24,7 +22,7 @@ function App() {
         <About />
         <h1 className="articles-heading">Latest Articles</h1>
         <section className="carousel-section content">
-          <div ref={setSliderRef} className="container">
+          <div className="container">
             <Slider {...sliderSettings}>
               <Articles />
               <Articles />
