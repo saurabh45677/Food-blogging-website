@@ -1,5 +1,5 @@
 import React from "react";
-import foodtruck from "../assets/Screenshot_669 2.jpg";
+import foodTruck from "../assets/truck-img.png";
 import { BsInstagram } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
@@ -10,7 +10,7 @@ const Footer = () => {
       <div className=" container">
         <div className="row footer-content">
           <div className="footer-image col-sm-12 col-md-12 col-lg-3">
-            <img src={foodtruck} alt="foodtruck" />
+            <img src={foodTruck} alt="foodtruck" />
           </div>
 
           <div className="contact-details col-sm-12 col-md-12 col-lg-3">

@@ -26,7 +26,9 @@ const Header = () => {
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6 right-part order-sm-0 order-md-0 order-lg-1">
               <img className="pizzaimage" src={pizzaimage} alt="pizzaimage" />
+              <button className="get-touch">Get In Touch</button>
             </div>
+
             <img className="vector" src={vector} alt="vector" />
           </div>
         </div>

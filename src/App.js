@@ -12,17 +12,20 @@ import article2 from "../src/assets/article2.jpg";
 import article3 from "../src/assets/article3.jpg";
 import article4 from "../src/assets/article4.jpg";
 import article5 from "../src/assets/article5.jpg";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [sliderCount, setSliderCount] = useState(1);
+
   const sliderSettings = {
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2,
+          slidesToScroll: 3,
           vertical: true,
         },
       },
@@ -56,6 +59,18 @@ function App() {
     },
   ];
 
+  useEffect(() => {
+    document.querySelector(".slick-next").addEventListener("click", () => {
+      sliderCount === 1 ? setSliderCount(2) : setSliderCount(1);
+    });
+
+    document
+      .querySelector(".slick-prev")
+      .addEventListener("click", () =>
+        sliderCount === 1 ? setSliderCount(2) : setSliderCount(1)
+      );
+  }, [sliderCount]);
+
   return (
     <div className="App">
       <>
@@ -71,6 +86,7 @@ function App() {
                 );
               })}
             </Slider>
+            <p className="slider-info">{sliderCount}/2</p>
           </div>
         </section>
         <Footer />
