@@ -9,9 +9,8 @@ const Header = () => {
       <section className="hero-section">
         <div className="container">
           <div className="row header">
-            <div className="col-sm-12 col-md-12 col-lg-6 left-part">
+            <div className="col-sm-12 col-md-12 col-lg-6 left-part order-sm-1 order-md-1 order-lg-0">
               <img className="left-image" src={foodtruck} alt="food-truck" />
-
               <div className="header-content">
                 <h1>
                   Discover the
@@ -25,7 +24,7 @@ const Header = () => {
                 <button className="explore-now">Explore Now!</button>
               </div>
             </div>
-            <div className="col-sm-12 col-md-12 col-lg-6 right-part">
+            <div className="col-sm-12 col-md-12 col-lg-6 right-part order-sm-0 order-md-0 order-lg-1">
               <img className="pizzaimage" src={pizzaimage} alt="pizzaimage" />
             </div>
             <img className="vector" src={vector} alt="vector" />

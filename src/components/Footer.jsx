@@ -6,7 +6,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section className="about-section">
+    <footer>
       <div className=" container">
         <div className="row footer-content">
           <div className="footer-image col-sm-12 col-md-12 col-lg-3">
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
